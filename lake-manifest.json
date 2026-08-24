@@ -7,10 +7,10 @@
       "type": "git",
       "subDir": null,
       "scope": "",
-      "rev": "1912974c25db065544162bc455dde43b23216a82",
+      "rev": "07ea4eb6bf466e0a0826d65069b6659317bc1d0c",
       "name": "HexPoly",
       "manifestFile": "lake-manifest.json",
-      "inputRev": "1912974c25db065544162bc455dde43b23216a82",
+      "inputRev": "07ea4eb6bf466e0a0826d65069b6659317bc1d0c",
       "inherited": false,
       "configFile": "lakefile.toml"
     },

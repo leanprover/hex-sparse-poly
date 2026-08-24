@@ -13,12 +13,12 @@ path = ".."
 [[require]]
 name = "HexModArith"
 git = "https://github.com/leanprover/hex-mod-arith.git"
-rev = "fef691d088652cb43c995634be2c420291080407"
+rev = "2df407d09c7362ad9e755b293034517a0b3c7ef5"
 
 [[require]]
 name = "HexPolyFp"
 git = "https://github.com/leanprover/hex-poly-fp.git"
-rev = "5156950c740033ba60b99b53043ab891d8716caa"
+rev = "1a21ec21624b3353559d0d6f386e5d5f24ccbc62"
 
 [[require]]
 name = "lean-bench"
