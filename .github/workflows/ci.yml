@@ -1,0 +1,46 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          auto-config: false
+          build: false
+      - name: Install SymPy oracle
+        run: python3 -m pip install --user sympy
+      - name: Build library and release regressions
+        run: lake build HexSparsePoly HexSparsePolyTests
+      - name: Build conformance sidecar
+        run: |
+          cd conformance
+          lake build
+      - name: Conformance oracle
+        run: |
+          cd conformance
+          lake exe hexsparsepoly_emit_fixtures > /tmp/hex-sparse-poly-fresh.jsonl
+          cd ..
+          diff -u conformance-fixtures/HexSparsePoly/sparsepoly.jsonl /tmp/hex-sparse-poly-fresh.jsonl
+          python3 scripts/oracle/sparsepoly_sympy.py /tmp/hex-sparse-poly-fresh.jsonl
+      - name: Build + full bench verify
+        env:
+          BENCH_VERIFY_HARD_CAP_SECONDS: "360"
+        run: |
+          cd bench
+          lake build hexsparsepoly_bench
+          bash ../scripts/ci/check_bench_verify_budget.sh hexsparsepoly_bench
+      - name: Assert Mathlib-free
+        run: |
+          if find .lake bench/.lake conformance/.lake -type d -name Mathlib 2>/dev/null | grep -q .; then
+            echo "ERROR: a Lake build pulled in Mathlib"; exit 1; fi
+          if grep -rqE '^import Mathlib' HexSparsePoly conformance/HexSparsePoly bench/HexSparsePoly 2>/dev/null; then
+            echo "ERROR: a source file imports Mathlib"; exit 1; fi
+          echo "Mathlib-free OK"
