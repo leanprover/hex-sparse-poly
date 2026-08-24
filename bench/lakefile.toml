@@ -11,6 +11,16 @@ name = "HexSparsePoly"
 path = ".."
 
 [[require]]
+name = "HexModArith"
+git = "https://github.com/leanprover/hex-mod-arith.git"
+rev = "fef691d088652cb43c995634be2c420291080407"
+
+[[require]]
+name = "HexPolyFp"
+git = "https://github.com/leanprover/hex-poly-fp.git"
+rev = "5156950c740033ba60b99b53043ab891d8716caa"
+
+[[require]]
 name = "lean-bench"
 git = "https://github.com/kim-em/lean-bench.git"
 rev = "master"
