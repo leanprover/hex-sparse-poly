@@ -1,26 +1,33 @@
-{"version": "1.2.0",
- "packagesDir": ".lake/packages",
- "packages":
- [{"url": "https://github.com/leanprover/hex-poly.git",
-   "type": "git",
-   "subDir": null,
-   "scope": "",
-   "rev": "1ca97f372946ecc430fe4f3961ec4220f9bc7706",
-   "name": "HexPoly",
-   "manifestFile": "lake-manifest.json",
-   "inputRev": "1ca97f372946ecc430fe4f3961ec4220f9bc7706",
-   "inherited": false,
-   "configFile": "lakefile.toml"},
-  {"url": "https://github.com/leanprover/hex-basic.git",
-   "type": "git",
-   "subDir": null,
-   "scope": "",
-   "rev": "591c146eeee0ef301a110cd33c19cc0cf1e07352",
-   "name": "HexBasic",
-   "manifestFile": "lake-manifest.json",
-   "inputRev": "591c146eeee0ef301a110cd33c19cc0cf1e07352",
-   "inherited": false,
-   "configFile": "lakefile.toml"}],
- "name": "«hex-sparse-poly»",
- "lakeDir": ".lake",
- "fixedToolchain": false}
+{
+  "version": "1.2.0",
+  "packagesDir": ".lake/packages",
+  "packages": [
+    {
+      "url": "https://github.com/leanprover/hex-poly.git",
+      "type": "git",
+      "subDir": null,
+      "scope": "",
+      "rev": "1ca97f372946ecc430fe4f3961ec4220f9bc7706",
+      "name": "HexPoly",
+      "manifestFile": "lake-manifest.json",
+      "inputRev": "1ca97f372946ecc430fe4f3961ec4220f9bc7706",
+      "inherited": false,
+      "configFile": "lakefile.toml"
+    },
+    {
+      "url": "https://github.com/leanprover/hex-basic.git",
+      "type": "git",
+      "subDir": null,
+      "scope": "",
+      "rev": "591c146eeee0ef301a110cd33c19cc0cf1e07352",
+      "name": "HexBasic",
+      "manifestFile": "lake-manifest.json",
+      "inputRev": "591c146eeee0ef301a110cd33c19cc0cf1e07352",
+      "inherited": false,
+      "configFile": "lakefile.toml"
+    }
+  ],
+  "name": "\u00abhex-sparse-poly\u00bb",
+  "lakeDir": ".lake",
+  "fixedToolchain": false
+}
