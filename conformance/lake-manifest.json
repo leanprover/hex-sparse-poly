@@ -7,10 +7,10 @@
       "type": "git",
       "subDir": null,
       "scope": "",
-      "rev": "a73a04b66be68d605a7a92f6cfdcfc6c727fda0f",
+      "rev": "fef691d088652cb43c995634be2c420291080407",
       "name": "HexModArith",
       "manifestFile": "lake-manifest.json",
-      "inputRev": "a73a04b66be68d605a7a92f6cfdcfc6c727fda0f",
+      "inputRev": "fef691d088652cb43c995634be2c420291080407",
       "inherited": false,
       "configFile": "lakefile.lean"
     },
