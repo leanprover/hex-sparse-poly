@@ -7,10 +7,10 @@
       "type": "git",
       "subDir": null,
       "scope": "",
-      "rev": "bf67a5243d68c909bcd059a89fd9d3f1c54ba7d8",
+      "rev": "1f7f31c7733ee5f0fa30d4a376adfa5125895c29",
       "name": "HexPoly",
       "manifestFile": "lake-manifest.json",
-      "inputRev": "bf67a5243d68c909bcd059a89fd9d3f1c54ba7d8",
+      "inputRev": "1f7f31c7733ee5f0fa30d4a376adfa5125895c29",
       "inherited": false,
       "configFile": "lakefile.toml"
     },
@@ -19,10 +19,10 @@
       "type": "git",
       "subDir": null,
       "scope": "",
-      "rev": "da8a864cd17ccca780d8c76af403e88585bc4734",
+      "rev": "a47240943e925951a676d1a1c2f2a615ae68fdef",
       "name": "HexBasic",
       "manifestFile": "lake-manifest.json",
-      "inputRev": "da8a864cd17ccca780d8c76af403e88585bc4734",
+      "inputRev": "a47240943e925951a676d1a1c2f2a615ae68fdef",
       "inherited": false,
       "configFile": "lakefile.toml"
     }
