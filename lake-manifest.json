@@ -10,7 +10,7 @@
       "rev": "9885a8b6af5c209d66a08a660e300c38dd7d31e3",
       "name": "HexPoly",
       "manifestFile": "lake-manifest.json",
-      "inputRev": "v0.2.0",
+      "inputRev": "v0.3.0",
       "inherited": false,
       "configFile": "lakefile.toml"
     },
@@ -22,7 +22,7 @@
       "rev": "38d0794d2a3dae4ca080b40e0694d212cc357f33",
       "name": "HexBasic",
       "manifestFile": "lake-manifest.json",
-      "inputRev": "v0.2.0",
+      "inputRev": "v0.3.0",
       "inherited": false,
       "configFile": "lakefile.toml"
     }
